@@ -1,10 +1,10 @@
 // Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-// Date        : Sat Nov 22 21:44:56 2025
+// Date        : Sun Nov 23 02:50:46 2025
 // Host        : LAPTOP-NQKR9QUF running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/USER/Desktop/Digital_Project/XOR_Stream_Cipher_UART/XOR_Stream_Cipher_UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_stub.v
+//               C:/Users/USER/Desktop/Digital_Project/XOR_Stream_Cipher_UART/XOR_Stream_Cipher_UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_stub.v
 // Design      : fifo_generator_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

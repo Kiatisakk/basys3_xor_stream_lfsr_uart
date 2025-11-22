@@ -291,12 +291,12 @@ ARCHITECTURE fifo_generator_0_arch OF fifo_generator_0 IS
       din : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       wr_en : IN STD_LOGIC;
       rd_en : IN STD_LOGIC;
-      prog_empty_thresh : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-      prog_empty_thresh_assert : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-      prog_empty_thresh_negate : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-      prog_full_thresh : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-      prog_full_thresh_assert : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-      prog_full_thresh_negate : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      prog_empty_thresh : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      prog_empty_thresh_assert : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      prog_empty_thresh_negate : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      prog_full_thresh : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      prog_full_thresh_assert : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      prog_full_thresh_negate : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
       int_clk : IN STD_LOGIC;
       injectdbiterr : IN STD_LOGIC;
       injectsbiterr : IN STD_LOGIC;
@@ -310,9 +310,9 @@ ARCHITECTURE fifo_generator_0_arch OF fifo_generator_0 IS
       almost_empty : OUT STD_LOGIC;
       valid : OUT STD_LOGIC;
       underflow : OUT STD_LOGIC;
-      data_count : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      rd_data_count : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      wr_data_count : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      data_count : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+      rd_data_count : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+      wr_data_count : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
       prog_full : OUT STD_LOGIC;
       prog_empty : OUT STD_LOGIC;
       sbiterr : OUT STD_LOGIC;
@@ -526,7 +526,7 @@ BEGIN
     GENERIC MAP (
       C_COMMON_CLOCK => 1,
       C_COUNT_TYPE => 0,
-      C_DATA_COUNT_WIDTH => 4,
+      C_DATA_COUNT_WIDTH => 10,
       C_DEFAULT_VALUE => "BlankString",
       C_DIN_WIDTH => 8,
       C_DOUT_RST_VAL => "0",
@@ -558,17 +558,17 @@ BEGIN
       C_OVERFLOW_LOW => 0,
       C_PRELOAD_LATENCY => 1,
       C_PRELOAD_REGS => 0,
-      C_PRIM_FIFO_TYPE => "512x36",
+      C_PRIM_FIFO_TYPE => "1kx18",
       C_PROG_EMPTY_THRESH_ASSERT_VAL => 2,
       C_PROG_EMPTY_THRESH_NEGATE_VAL => 3,
       C_PROG_EMPTY_TYPE => 0,
-      C_PROG_FULL_THRESH_ASSERT_VAL => 14,
-      C_PROG_FULL_THRESH_NEGATE_VAL => 13,
+      C_PROG_FULL_THRESH_ASSERT_VAL => 1022,
+      C_PROG_FULL_THRESH_NEGATE_VAL => 1021,
       C_PROG_FULL_TYPE => 0,
-      C_RD_DATA_COUNT_WIDTH => 4,
-      C_RD_DEPTH => 16,
+      C_RD_DATA_COUNT_WIDTH => 10,
+      C_RD_DEPTH => 1024,
       C_RD_FREQ => 1,
-      C_RD_PNTR_WIDTH => 4,
+      C_RD_PNTR_WIDTH => 10,
       C_UNDERFLOW_LOW => 0,
       C_USE_DOUT_RST => 1,
       C_USE_ECC => 0,
@@ -579,10 +579,10 @@ BEGIN
       C_USE_FWFT_DATA_COUNT => 0,
       C_VALID_LOW => 0,
       C_WR_ACK_LOW => 0,
-      C_WR_DATA_COUNT_WIDTH => 4,
-      C_WR_DEPTH => 16,
+      C_WR_DATA_COUNT_WIDTH => 10,
+      C_WR_DEPTH => 1024,
       C_WR_FREQ => 1,
-      C_WR_PNTR_WIDTH => 4,
+      C_WR_PNTR_WIDTH => 10,
       C_WR_RESPONSE_LATENCY => 1,
       C_MSGON_VAL => 1,
       C_ENABLE_RST_SYNC => 1,
@@ -739,12 +739,12 @@ BEGIN
       din => din,
       wr_en => wr_en,
       rd_en => rd_en,
-      prog_empty_thresh => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4)),
-      prog_empty_thresh_assert => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4)),
-      prog_empty_thresh_negate => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4)),
-      prog_full_thresh => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4)),
-      prog_full_thresh_assert => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4)),
-      prog_full_thresh_negate => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4)),
+      prog_empty_thresh => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 10)),
+      prog_empty_thresh_assert => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 10)),
+      prog_empty_thresh_negate => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 10)),
+      prog_full_thresh => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 10)),
+      prog_full_thresh_assert => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 10)),
+      prog_full_thresh_negate => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 10)),
       int_clk => '0',
       injectdbiterr => '0',
       injectsbiterr => '0',
