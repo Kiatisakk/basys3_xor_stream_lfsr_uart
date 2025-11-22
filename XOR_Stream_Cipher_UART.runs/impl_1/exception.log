@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\USER\Desktop\Digital_Project\XOR_Stream_Cipher_UART\XOR_Stream_Cipher_UART.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

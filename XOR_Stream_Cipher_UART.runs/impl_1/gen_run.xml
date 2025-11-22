@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1763838728">
+  <File Type="OPT-DCP" Name="Top_System_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="ROUTE-DCP" Name="Top_System_routed.dcp"/>
+  <File Type="PA-TCL" Name="Top_System.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="Top_System_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Top_System_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="Top_System_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Top_System.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Top_System_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Top_System_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Top_System_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Top_System_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Top_System_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Top_System_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Top_System_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Top_System_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Top_System_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Top_System_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Top_System_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Top_System_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Top_System_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Top_System_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Top_System_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="Top_System.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="Top_System_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="Top_System_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="Top_System_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Top_System_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Top_System_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Top_System_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Top_System_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Top_System_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Top_System_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Top_System_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Top_System_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Top_System_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Top_System_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Top_System_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Top_System_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Top_System_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Top_System_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="Top_System.bit"/>
+  <File Type="BG-BIN" Name="Top_System.bin"/>
+  <File Type="BITSTR-MSK" Name="Top_System.msk"/>
+  <File Type="BITSTR-RBT" Name="Top_System.rbt"/>
+  <File Type="BITSTR-NKY" Name="Top_System.nky"/>
+  <File Type="BITSTR-BMM" Name="Top_System_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Top_System.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Top_System.sysdef"/>
+  <File Type="BG-BGN" Name="Top_System.bgn"/>
+  <File Type="BG-DRC" Name="Top_System.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/UART_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/keybuilder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Debounce.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Top_System"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/uart_const.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_0"/>
+</GenRun>

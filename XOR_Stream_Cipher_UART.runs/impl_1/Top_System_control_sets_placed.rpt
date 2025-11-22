@@ -1,0 +1,66 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Sun Nov 23 02:12:47 2025
+| Host         : LAPTOP-NQKR9QUF running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_System_control_sets_placed.rpt
+| Design       : Top_System
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    13 |
+| Minimum Number of register sites lost to control set restrictions |    30 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              49 |           18 |
+| Yes          | No                    | No                     |              33 |           11 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             110 |           37 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------------------------------------------------------------------------+--------------------------+------------------+----------------+
+|  Clock Signal  |                                                Enable Signal                                               |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++----------------+------------------------------------------------------------------------------------------------------------+--------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | rx/bit_spacing_count                                                                                       | reset_IBUF               |                2 |              4 |
+|  clk_IBUF_BUFG | fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0]                          | reset_IBUF               |                3 |              8 |
+|  clk_IBUF_BUFG | tx/E[0]                                                                                                    |                          |                4 |              8 |
+|  clk_IBUF_BUFG | tx/data_temp                                                                                               |                          |                2 |              8 |
+|  clk_IBUF_BUFG | rx/data_out[7]_i_1_n_0                                                                                     | reset_IBUF               |                1 |              8 |
+|  clk_IBUF_BUFG |                                                                                                            |                          |                4 |             10 |
+|  clk_IBUF_BUFG | fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/gcc0.gc1.gsym.count_reg[0][0] | reset_IBUF               |                2 |             12 |
+|  clk_IBUF_BUFG | tx/baud_count[13]_i_1_n_0                                                                                  | reset_IBUF               |                4 |             14 |
+|  clk_IBUF_BUFG | btn_load_seed_IBUF                                                                                         | reset_IBUF               |                8 |             16 |
+|  clk_IBUF_BUFG | key_gen_inst/r_lfsr[15]_i_1_n_0                                                                            | reset_IBUF               |                9 |             16 |
+|  clk_IBUF_BUFG | timeout_count[0]_i_1_n_0                                                                                   |                          |                5 |             17 |
+|  clk_IBUF_BUFG | db_unit/count[0]_i_2_n_0                                                                                   | db_unit/count[0]_i_1_n_0 |                8 |             32 |
+|  clk_IBUF_BUFG |                                                                                                            | reset_IBUF               |               18 |             49 |
++----------------+------------------------------------------------------------------------------------------------------------+--------------------------+------------------+----------------+
+
+
