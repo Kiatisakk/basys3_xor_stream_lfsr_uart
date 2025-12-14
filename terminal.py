@@ -67,9 +67,10 @@ def read_from_port(ser):
                 text_str = ''.join(chr(b) if 32 <= b <= 126 else '.' for b in data)
                 
                 print(f"\n{Fore.GREEN}[RX] >> HEX : {hex_str}")
-                print(f"{Fore.GREEN}       TXT : {text_str}{Style.RESET_ALL}")
+                print(f"{Fore.GREEN}[RX] >> TXT : {text_str}{Style.RESET_ALL}")
                 
-                print(f"{Fore.YELLOW}>> {Style.RESET_ALL}", end='', flush=True)
+                current_prompt = "[HEX]" if tx_mode == 'HEX' else "[TXT]"
+                print(f"{Fore.YELLOW}{current_prompt} >> {Style.RESET_ALL}", end='', flush=True)
         except:
             break
 
